@@ -22,27 +22,30 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-ZS-nzR">
                                         <rect key="frame" x="10" y="10" width="313" height="185"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jOz-p1-Bsq">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jOz-p1-Bsq">
                                                 <rect key="frame" x="0.0" y="0.0" width="313" height="51.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
+                                                    <action selector="usernameChanges:" destination="BYZ-38-t0r" eventType="editingChanged" id="1FX-Ig-QOC"/>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="UGd-zh-sqc"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qs6-Te-fnB">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qs6-Te-fnB">
                                                 <rect key="frame" x="0.0" y="66.666666666666629" width="313" height="51.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
+                                                    <action selector="nameChanges:" destination="BYZ-38-t0r" eventType="editingChanged" id="Ap8-dc-EOB"/>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="jXe-ZS-50G"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-zK-ZM4">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-zK-ZM4">
                                                 <rect key="frame" x="0.0" y="133.33333333333331" width="313" height="51.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
+                                                    <action selector="addressChanges:" destination="BYZ-38-t0r" eventType="editingChanged" id="onA-AX-BqA"/>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="2Sq-iD-JYk"/>
                                                 </connections>
                                             </textField>
@@ -90,8 +93,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mobileNumber" destination="oMc-zK-ZM4" id="gYN-sr-eOj"/>
+                        <outlet property="address" destination="oMc-zK-ZM4" id="TaU-r3-Azw"/>
                         <outlet property="name" destination="Qs6-Te-fnB" id="5sc-Gf-TaF"/>
+                        <outlet property="signupButton" destination="KXA-h5-Dce" id="hcN-Z7-eU0"/>
                         <outlet property="username" destination="jOz-p1-Bsq" id="3vx-vj-RWd"/>
                     </connections>
                 </viewController>
